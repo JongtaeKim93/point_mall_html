@@ -4,14 +4,24 @@
         <meta charset="utf8">
         <link rel="stylesheet" href="style.css">
         <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="index.js" type="text/javascript"></script>
+        <!-- React를 실행. -->
+        <!-- 주의: 사이트를 배포할 때는 "development.js"를 "production.min.js"로 대체하세요. -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <script src="index.js" type="text/babel"></script>
     </head>
     <body>
         <header>
             <a href="/">PointMall</a>
+            <div class="header-right">
+                <a href="/login.html">Login</a>
+            </div>
         </header>
-        <div id="container"></div>
-        <div id="item-list-container">
+        <div id="container">
+            <div id="item-list-container">
+            </div>
         </div>
         <footer>
             <p>Point Mall</p>
